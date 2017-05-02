@@ -1,7 +1,13 @@
-When(/^I am on the landing pages$/) do
+When(/^I am on the landing page$/) do
   visit root_path
 end
 
-Then(/^I should see "([^"]*)"$/) do |arg1|
-  expect(page).to have_content
+Then(/^I should see "([^"]*)"$/) do |content|
+  expect(page).to have_content content
+end
+
+Given(/^the following articles exists$/) do |table|
+  table.hashes.each do |hash|
+    Article.create!(hash)
+  end
 end
