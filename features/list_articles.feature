@@ -4,7 +4,7 @@ Feature: List articles on landing pages
   I would like to see a list of articles
 
   Background:
-    Given the following articles exist
+    Given the following article exist
       | title                | content                            | author |
       | A breaking news item | Some really breaking action        | Thomas |
       | Learn Rails 5        | Build awesome rails applications   | Amber  |
