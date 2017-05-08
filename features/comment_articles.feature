@@ -13,6 +13,8 @@ Feature: An article has comments
       Then I should see "A breaking news item"
       And I should see "Some really breaking action"
       And I should see "Written by Thomas at 2016-12-15"
+      When I click on "Add a comment"
+      Then I should see "Add a comment"
       When I fill in "comment" with "This is a comment"
       And I fill in "email" with "email@email.com"
       And I click on "Add Comment" button
