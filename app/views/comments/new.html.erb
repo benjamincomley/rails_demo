@@ -1,1 +1,11 @@
 <h2>Add a comment to '<%= @article.title %>'
+
+<% form_for [@article, @comment] do |f| %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.submit 'Submit' %>
+<% end %>
+
+<form action="/articles/:article_id/comment" method="post"
+
+</form>
